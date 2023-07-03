@@ -66,7 +66,7 @@ class UsersController extends Controller
         ]);
         $user = User::find($id);
         $user->fill($attributes)->save();
-        return isset($attributes['newPassword']) ? redirect('/login') : redirect('/users/'.$request->user()->id);
+        return isset($attributes['newPassword']) ? redirect('/login') : Inertia::render('Users/Edit');
     }
 
     /**

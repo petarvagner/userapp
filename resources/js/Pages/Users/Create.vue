@@ -7,6 +7,7 @@ export default {
 <script setup lang="ts">
 import { ref } from "vue";
 import { useForm, Link, Head } from "@inertiajs/vue3";
+import NavLink from "@/Shared/NavLink.vue";
 
 const form = useForm({
     'name': '',
@@ -22,7 +23,9 @@ const submit = () => {
 </script>
 
 <template>
-    <Head title="Create User"/>
+    <Head>
+        <title>Create User</title>
+    </Head>
     <h1 class="text-3xl">Create new user</h1>
     <form @submit.prevent="submit" class="mx-auto mb-0 mt-8 max-w-md space-y-4">
         <div>
@@ -134,7 +137,7 @@ const submit = () => {
         <div class="flex items-center justify-between">
             <p class="text-sm text-gray-500">
                 Have an account?
-                <Link class="underline" href="/login" as="a">Sign in</Link>
+                <NavLink class="underline" href="/login" as="a">Sign in</NavLink>
             </p>
 
             <button

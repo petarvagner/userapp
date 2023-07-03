@@ -6,8 +6,8 @@ export default {
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { Link, useForm, Head } from "@inertiajs/vue3";
-import type { PropType } from 'vue'
+import { useForm, Head } from "@inertiajs/vue3";
+import NavLink from "@/Shared/NavLink.vue";
 
 const form = useForm({
     'email': '',
@@ -23,7 +23,6 @@ const submit = () => {
 
 <template>
     <Head title="Login Page"/>
-
     <main class="grid place-items-center min-h-screen">
         <section class="p-6 border rounded-xl m-auto w-96">
             <h1 class="text-3xl mb-3">Login Page</h1>
@@ -104,7 +103,7 @@ const submit = () => {
 
                     <p class="text-sm text-gray-500">
                         Don't have an account?
-                        <Link class="underline" href="/register" as="a">Register</link>
+                        <NavLink class="underline" href="/register" as="a">Register</NavLink>
                     </p>
 
                     <button

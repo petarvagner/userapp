@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {computed, ComputedRef, ref, defineProps, PropType} from "vue";
 import {useForm, Link, Head, usePage} from "@inertiajs/vue3";
-
+import {debounce} from "lodash";
 const props = defineProps({
     'token': {
         type: String as PropType<string>,
@@ -22,21 +22,22 @@ const createTokenForm = useForm({
 const showPassword = ref(false)
 const isCopied = ref(false)
 
-const updateUser = () => {
+const updateUser = debounce(() => {
     if (!updateUserForm.newPassword) {
         updateUserForm.newPassword = undefined
     }
-    updateUserForm.post('/users/'+user.value.id, {
-    })
-}
-const createToken = () => {
-    createTokenForm.post('/tokens', {
-        preserveScroll: true,
-        onSuccess: function () {
-            createTokenForm.reset()
-        },
-    })
-}
+    updateUserForm.post('/users/'+user.value.id)
+}, 300);
+const createToken = debounce(
+    () => {
+        createTokenForm.post('/tokens', {
+            preserveScroll: true,
+            onSuccess: function () {
+                createTokenForm.reset()
+            },
+        })
+    }, 300
+);
 
 const copyToClipboard = async () => {
     try {

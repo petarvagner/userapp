@@ -1,66 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# User App 🧑‍💻👩‍💻
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### TO DO:
+#### Requirements
 
-## About Laravel
+To perform this task, you will need to use the following technologies:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+* Laravel 10
+* InertiaJS
+* VueJS 3
+* TailwindCSS
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### The Task
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+We require you to build a simple Laravel application that will allow a user to log in or register, and update their details. They should be able to update these details through a web interface as well as an API request.
 
-## Learning Laravel
+A user must have:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Name
+* Email
+* Password
+* Rules
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+**Please do not use Laravel Jetstream for this task, we want to see what you can do - not see if you can initialize a package correctly.**
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+You can use whichever packages aid you in the development of this task, as long as they aren’t doing the task for you.
 
-## Laravel Sponsors
+### The Extended Task
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+An extended task would be to allow these users to generate API tokens as well.
 
-### Premium Partners
+### Time Allocation
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Take as much time as you require for this task, we want to see your process - not a ticket just being pushed through the process. The sooner you get this done the sooner we are able to assess and move the process forward, but do not feel that this is a first come first serve situation.
 
-## Contributing
+### Access
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Provide your submission to us in a git repository complete with a README containing setup instructions. Please do not send us a link to a public repository, as this can then become a source of plagiarism for future candidates. Please invite JustSteveKing, once you are ready, on GitHub so that your submission can be processed.
 
-## Code of Conduct
+### Feedback
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Where possible we will try and ensure that we provide feedback on all applicants, even if not successful. We are firm believers in investing in peoples growth.
 
-## Security Vulnerabilities
+### Next Steps
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+The next step after this task will be an interview with someone from our Engineering team, so that we can have a conversation about the role, culture, and ask any questions we might have from your task submission. 
 
-## License
+## Docker is in docker folder and you need only do
+  ```
+  ./start.sh
+  ``` 
+  to set everything up
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+  To enter the docker container navigate to docker folder:
+  ```
+  cd docker
+  ``` 
+
+SSH to the container with:
+  ```
+  docker compose exec workspace bash
+  ``` 

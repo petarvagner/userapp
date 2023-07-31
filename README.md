@@ -34,9 +34,13 @@ An extended task would be to allow these users to generate API tokens as well.
   ```
   ./start.sh
   ``` 
-  to set everything up
+  to set everything up.
 
-  To enter the docker container navigate to docker folder:
+### Access the app
+To access the app type `http://localhost` in You browser of choice.
+
+### Entering dev container
+  To enter the workspace docker container navigate to docker folder:
   ```
   cd docker
   ``` 
